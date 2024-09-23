@@ -1,0 +1,563 @@
+/* src/ConsultingFirmWebsite.css */
+
+/* Font Awesome Import (if not already included) */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+/* Import a professional font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: Arial, sans-serif; /* Set a default font for the body */
+}
+
+/* Header Styles */
+header {
+    background-image: url('Header.png'); 
+    background-size: cover;
+    background-position: center;
+    color: rgb(10, 10, 10); 
+    padding: 60px 40px; 
+    position: relative; 
+}
+
+/* Overlay for Header Background */
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1; 
+    text-align: left;
+}
+
+header h1 {
+    font-family: "PwC ITC Charter", Georgia, Serif; 
+    font-size: 2.5rem; 
+}
+
+header h2 {
+    font-family: 'Lora', serif !important; 
+    font-size: 1rem !important; 
+}
+
+header p {
+    font-family: 'Lora', serif; 
+    font-size: 1.25rem; 
+}
+
+/* New Content Section Styles */
+.my-5 {
+    margin-top: 3rem; 
+    margin-bottom: 3rem; 
+}
+
+.my-5 p {
+    font-size: 1.125rem; 
+    color: #333; 
+    line-height: 1.6; 
+}
+
+/* Navbar Styles */
+.sign-in-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.social-buttons {
+    margin-top: 20px;
+}
+
+.apple-button,
+.google-button,
+.linkedin-button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+}
+/* Optional styles for the modal */
+.modal-header {
+    background-color: #343a40;
+    color: white; 
+}
+
+.modal-body {
+    background-color: #f8f9fa; 
+}
+.navbar {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: rgba(52, 58, 64, 0.9); 
+}
+
+.navbar-nav {
+    display: flex; 
+    align-items: center; 
+}
+
+.navbar-nav .nav-link {
+    color: white; 
+    text-decoration: none; 
+    padding: 10px 15px; 
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+}
+
+.navbar-right {
+   display: flex; 
+   align-items: center; 
+   margin-left:auto; 
+}
+
+.search-bar {
+   padding: 10px; 
+   border-radius: 5px; 
+   border: none; 
+   margin-right: 10px; 
+}
+
+.sign-in-btn {
+   margin-left: 10px; 
+}
+
+/* Main Content Styles */
+main {
+   margin-top: -20px; 
+}
+
+/* Card styles */
+.card {
+    border-radius: 15px; 
+    overflow: hidden; 
+    transition: transform 0.3s ease; 
+}
+
+.card:hover {
+    transform: scale(1.05); 
+}
+
+/* Card Image Styles */
+.card-img-top0 {
+    background-image: url('Operation.png');
+    height: 200px; 
+    object-fit: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card-img-top1 {
+    background-image: url('technology.png');
+    height: 200px; 
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card-img-top2 {
+    background-image: url('stratergy.png');
+    height: 200px; 
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Card Body Styles */
+.card-body {
+    padding: 20px; 
+}
+
+/* Card Title Styles */
+.card-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem; 
+    margin-bottom: 10px; 
+}
+
+/* Card Text Styles */
+.card-text {
+    font-family: 'Lora', serif; 
+    font-size: 1rem; 
+    color: #6c757d; 
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #007bff; 
+    border-color: #007bff; 
+}
+
+.btn-lg {
+    padding: 10px 20px; 
+}
+
+.digital-transformation-section {
+    background-color: #191c1f; 
+    color: white; 
+    border-radius: 2px; 
+    margin: 20px 0; 
+    padding: 30px;
+}
+
+.section-heading {
+    font-size: 2rem; 
+    margin-bottom: 10px;
+}
+
+.section-content {
+    font-size: 1.25rem; 
+    margin-bottom: 20px; 
+}
+
+/* Button Styles */
+.watch-button {
+    background-color: #007bff; 
+    color: rgb(255, 255, 255); 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+}
+.our-people-section {
+    padding: 100px; 
+    margin-bottom: 10px;
+}
+
+.card {
+    border: none; 
+    border-radius: 20px; 
+    overflow: hidden; 
+    transition: transform 0.3s ease; 
+}
+
+.card:hover {
+    transform: scale(1.05); 
+}
+
+.card-body {
+    text-align: center; 
+}
+
+.person-name {
+    font-size: 1.25rem; 
+    font-weight: bold; 
+}
+
+.person-role {
+    font-size: 1rem; 
+    color: #6c757d; 
+}
+
+.card2-img-top0,
+.card2-img-top1,
+.card2-img-top2,
+.card2-img-top3,
+.card2-img-top4,
+.card2-img-top5 {
+    background-image: url('stratergy.png') ;
+    object-position: center;
+    height: 250px; 
+    width: 250px; 
+    margin: 15px auto 20px ; 
+    border-radius: 150%; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #343a40; 
+    color: white;
+    padding: 30px;
+    position: relative; 
+}
+
+footer p {
+    margin-bottom: 0;
+    font-size:.9rem;
+}
+.social-media-icons {
+    display: flex;
+    justify-content: center; 
+}
+
+.social-icon {
+    margin: 0 10px; 
+    color: white; 
+    font-size: 24px; 
+    text-decoration: none; 
+}
+
+.social-icon:hover {
+    opacity: 0.7; 
+}
+
+
+.footer-links {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none; 
+    margin: 0 10px; 
+}
+
+.footer-link:hover {
+    text-decoration: underline; 
+}
+
+/* Social Media Icons Styles */
+.social-media-icons {
+    display: flex;
+    justify-content: center; 
+}
+
+.social-icon {
+    margin: 0 10px; 
+    color: white;
+    font-size: 24px; 
+    text-decoration: none; 
+}
+
+.social-icon:hover {
+    opacity: 0.7; 
+}
+
+footer {
+    background-color: #343a40; 
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 60px 0; 
+    font-family: 'Montserrat', sans-serif;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.footer-link {
+    color: white; 
+    text-decoration: none; 
+    font-size: 16px;
+    transition: color 0.3s ease; 
+}
+
+.footer-link:hover {
+    text-decoration: underline; 
+    color: #f8f9fa;
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px; 
+}
+
+.social-icon {
+    margin: 0 20px; 
+    color: white;
+    font-size: 28px; 
+    text-decoration: none; 
+    transition: transform 0.3s ease; 
+}
+
+.social-icon:hover {
+    opacity: 0.8; 
+    transform: scale(1.2); 
+}
+
+/* Social Media Section Styles */
+.social-media-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.quick-links {
+    display: flex; 
+    justify-content: center; 
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.quick-links {
+    display: flex; 
+    justify-content: center; 
+    list-style-type: none; 
+    padding: 0; 
+    margin: 20px 0; 
+}
+
+.quick-link {
+    margin: 0 15px; 
+}
+
+.quick-link a {
+    color: white; 
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+}
+
+.quick-link a:hover {
+    color: #f8f9fa; 
+}
+/* Company Info Section Styles */
+.company-info {
+    text-align: center; 
+    margin-bottom: 30px; 
+}
+
+.company-name {
+    font-size: 35px; 
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Aclonica';
+}
+
+.company-description {
+    font-size: 16px; 
+    line-height: 1.5;
+}
+
+/* Email Input and Submit Button Styles */
+.email-input {
+    font-size: 16px; 
+    padding: 10px 15px; 
+    border-radius: 5px;
+    border: none; 
+    margin-right: 10px; 
+}
+
+.submit-btn {
+    font-size: 16px; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    border: none; 
+    background-color: #007bff; 
+    color: white; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.submit-btn:hover {
+    background-color: #0056b3; 
+}
+
+/* Copyright Text Styles */
+.copyright {
+    font-size: 14px; 
+    margin-top: 30px; 
+}
+
+/* Responsive Design Adjustments */
+
+@media (max-width: 768px) {
+    .company-name, .subscribe-heading, .social-media-heading {
+        font-size: 1.25rem; 
+    }
+
+    .company-description, .subscribe-subheading {
+        font-size: 0.9rem; 
+    }
+
+    .email-input {
+        max-width: none; 
+        margin-bottom: 10px; 
+    }
+}
+
+/* Media Query for Responsiveness */
+@media (max-width:768px) {
+    header {
+        flex-direction: column; 
+        align-items:flex-start; 
+        padding-top :10px;
+        padding-bottom :10px;
+    }
+ 
+    .navbar-nav,
+    .search-bar,
+    .sign-in-btn {
+        width :100%; 
+        text-align:center; 
+        margin-bottom :10px;
+    }
+ 
+    .navbar-nav {
+        flex-direction :column ; 
+        align-items:flex-start ; 
+    }
+ 
+    .navbar-nav .nav-link {
+        margin-left :0 ; 
+        margin-bottom :10px ; 
+    }
+ }
+
+ @media (max-width: 768px) {
+    .section-heading {
+        font-size: 1.5rem; 
+    }
+
+    .section-content {
+        font-size: 1rem; 
+    }
+}
+
+@media (max-width: 1200px) {
+    .person-name {
+        font-size: 1.15rem; 
+    }
+
+    .person-role {
+        font-size: 0.95rem; 
+    }
+}
+
+@media (max-width: 768px) {
+    .our-people-section h2 {
+        font-size: 1.75rem; 
+    }
+
+    .person-name {
+        font-size: 1.1rem; 
+    }
+
+    .person-role {
+        font-size: 0.85rem; 
+    }
+
+    .our-people-section {
+        padding: 20px; 
+    }
+}
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 120px; 
+        width: 120px; 
+        margin-top: -60px; 
+    }
+
+    .person-name {
+        font-size: 1.15rem; 
+    }
+
+    .person-role {
+        font-size: 0.9rem; 
+    }
+}
